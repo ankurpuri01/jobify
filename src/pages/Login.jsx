@@ -1,10 +1,11 @@
 import Wrapper from '../assets/wrappers/RegisterAndLoginPage';
 import Logo from '../components/Logo';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-function Login() {
+function Login({ setIsAuthenticated }) {
   const [form, setForm] = useState({ email: '', password: '' });
+  const navigate = useNavigate();
 
   const handleChange = e => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -12,7 +13,9 @@ function Login() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // handle login logic
+    // Simulate successful login
+    setIsAuthenticated(true);
+    navigate('/dashboard');
   };
 
   return (

@@ -1,6 +1,5 @@
 import main from '../assets/images/main.svg';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.svg';
 import Logo from '../components/Logo';
 import Wrapper from '../assets/wrappers/LandingPage';
 function Landing() {
@@ -16,10 +15,7 @@ function Landing() {
             job <span>tracking</span> app
           </h1>
           <p>
-            I'm baby wayfarers hoodie next level taiyaki brooklyn cliche blue
-            bottle single-origin coffee chia. Aesthetic post-ironic venmo,
-            quinoa lo-fi tote bag adaptogen everyday carry meggings +1 brunch
-            narwhal.
+            Welcome to Jobify! Effortlessly track your job applications, manage your career journey, and stay organized. Sign up or log in to get started.
           </p>
           <Link to='/register' className='btn register-link'>
             Register
